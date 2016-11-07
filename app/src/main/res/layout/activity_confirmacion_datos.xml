@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_confirmacion_datos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.android.curso.tareacontactos.confirmacionDatos"
+    >
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_confirmacion"
+        android:textStyle="bold"
+        android:textSize="@dimen/titulo_confirmacion"
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:id="@+id/llLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/tvTitulo"
+        android:layout_marginTop="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:id="@+id/tvNombreTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombrec_tag"
+                android:textStyle="bold"
+                android:textSize="@dimen/tamanio_tags"
+                />
+
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre_contacto"
+                android:textSize="@dimen/tamanio_valor"
+                android:layout_marginLeft="@dimen/left"
+                />
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvNacimientoTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nacimiento_tag"
+            android:textStyle="bold"
+            android:textSize="@dimen/tamanio_tags"
+            />
+
+        <TextView
+            android:id="@+id/tvNacimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nacimiento_contacto"
+            android:textSize="@dimen/tamanio_valor"
+            android:layout_marginLeft="@dimen/left"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTelefonoTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/telefono_tag"
+            android:textStyle="bold"
+            android:textSize="@dimen/tamanio_tags"
+            />
+
+        <TextView
+            android:id="@+id/tvTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/telefono_contacto"
+            android:textSize="@dimen/tamanio_valor"
+            android:layout_marginLeft="@dimen/left"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvEmailTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_tag"
+            android:textStyle="bold"
+            android:textSize="@dimen/tamanio_tags"
+            />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_contacto"
+            android:textSize="@dimen/tamanio_valor"
+            android:layout_marginLeft="@dimen/left"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDescripcionTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descripcion_tag"
+            android:textStyle="bold"
+            android:textSize="@dimen/tamanio_tags"
+            />
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descripcion_contacto"
+            android:textSize="@dimen/tamanio_valor"
+            android:layout_marginLeft="@dimen/left"
+            />
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/editar_datos"
+        android:elevation="6dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/llLayout"
+        />
+
+
+</RelativeLayout>
